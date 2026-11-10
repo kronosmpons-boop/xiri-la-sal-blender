@@ -209,11 +209,11 @@ main > .split:first-child .split-txt{padding-top:calc(var(--nav-h) + 12px + var(
 .plats::-webkit-scrollbar{display:none}
 .plat{flex:0 0 calc(var(--ph) * .8);scroll-snap-align:start}
 
-.plat a{position:relative;display:flex;flex-direction:column;justify-content:flex-end;height:var(--ph);width:100%;padding:var(--s4) var(--s3);overflow:hidden;color:var(--on-photo);text-decoration:none;background:var(--surface)}
+.plat a,.plat-card{position:relative;display:flex;flex-direction:column;justify-content:flex-end;height:var(--ph);width:100%;padding:var(--s4) var(--s3);overflow:hidden;color:var(--on-photo);text-decoration:none;background:var(--surface)}
 .plat .ph{position:absolute;inset:0}
 .plat .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,16,12,0) 35%,rgba(20,16,12,.72) 100%)}
 .plat img{width:100%;height:100%;object-fit:cover;transition:transform .4s cubic-bezier(.23,1,.32,1)}
-@media (hover:hover) and (pointer:fine){.plat a:hover img{transform:scale(1.04)}}
+@media (hover:hover) and (pointer:fine){.plat a:hover img,.plat-card:hover img{transform:scale(1.04)}}
 .plat h3,.plat small{position:relative;z-index:1}
 .plat h3{font:600 clamp(1.375rem, 1rem + .8vw, 1.75rem)/1.2 var(--f-title);text-shadow:0 1px 8px rgba(0,0,0,.35)}
 .plat small{order:-1;margin-bottom:4px;font-size:var(--fs-xs);font-weight:600;letter-spacing:.12em;text-transform:uppercase;opacity:.9}
@@ -225,7 +225,7 @@ main > .split:first-child .split-txt{padding-top:calc(var(--nav-h) + 12px + var(
 @media (max-width:960px){
   .plats{gap:var(--s2);overscroll-behavior-x:contain}
   .plat,.plat-nota{flex:0 0 84%}
-  .plat a{height:auto;aspect-ratio:4/5;max-height:min(64vh,560px)}
+  .plat a,.plat-card{height:auto;aspect-ratio:4/5;max-height:min(64vh,560px)}
 }
 
 .punts{display:none}
