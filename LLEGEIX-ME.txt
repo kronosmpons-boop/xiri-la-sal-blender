@@ -1,0 +1,19 @@
+XIRI LA SAL — WEB INTEGRADA
+
+Contingut: la web de Web-integrada/Web-simple amb la portada 3D,
+el logo de la llauna desplaçat cap amunt i els quatre idiomes.
+
+Per provar-la, obre un terminal en aquesta carpeta i executa:
+  python3 -m http.server 8766 --bind 127.0.0.1
+Després obre http://127.0.0.1:8766/
+
+Publica el CONTINGUT d'aquesta carpeta com a arrel del lloc.
+No necessita Blender, Node ni cap procés de compilació al servidor.
+Inclou assets/intro amb Three.js, el model animat i les lletres en 3D.
+No inclou configuració ni credencials del proveïdor d'allotjament.
+
+Per incorporar canvis de la carpeta font, executa primer
+python3 Web-integrada/Web-simple/src/build.py i després
+python3 Blender-version/integrate_site.py des del projecte de treball.
+No executis src/build.py sobre aquesta carpeta de sortida: regeneraria
+les pàgines sense la portada. Modifica la font i torna a integrar.

@@ -1,0 +1,10 @@
+backups/
+Web-simple/
+.DS_Store
+.playwright-mcp/
+.lighthouseci/
+.claude/
+wp-file-manager.png
+wpfm-*.png
+assets/ig-raw/
+assets/intro/xiri-la-sal.glb.bak
